@@ -1,0 +1,242 @@
+.container {
+  overflow-x: hidden;
+  padding-top: 96px;
+  padding-bottom: 100px;
+}
+
+.subContainer {
+  margin: auto;
+  max-width: 1150px;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.showsDetailHeading {
+  margin-left: 16px !important;
+}
+
+.viewAll {
+  margin-right: 16px !important;
+}
+
+/*card */
+
+.cardBox {
+  margin-top: 34px;
+  margin-left: 16px;
+  margin-bottom: 114px;
+  max-width: 1148px;
+  display: flex;
+  justify-content: space-between;
+  /* overflow-x: scroll; */
+  padding: 10px;
+}
+
+.cardBox > :not(:last-child) {
+  margin-right: 28px;
+}
+
+.card {
+  position: relative;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+  z-index: 2;
+}
+
+.innerContainer {
+  border-radius: 8px;
+  background-color: #111229;
+  width: 268px;
+  height: 387px;
+}
+
+.backCover {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 268px;
+  height: 387px;
+  border-radius: 8px;
+  top: -2%;
+  right: -2.99%;
+  background-image: linear-gradient(163.41deg, #301a68 0.11%, #234c97 170.69%);
+  transition: all 0.2s;
+  backface-visibility: hidden;
+}
+
+.imageBox {
+  width: 268px;
+  height: 230px;
+}
+
+.card:hover .backCover {
+  top: -1%;
+  right: -1.5%;
+}
+
+.ticket2 {
+  display: none;
+  cursor: pointer;
+}
+
+.ticketBox {
+  transition: all 0.2s;
+  height: 36px;
+}
+
+.ticketBox:hover .ticket2 {
+  display: block;
+}
+
+.ticketBox:hover .ticket1 {
+  display: none;
+  cursor: pointer;
+}
+
+/*TEXT */
+
+.textBox {
+  text-align: left;
+  margin-top: 25px;
+  margin-left: 16px;
+}
+
+.category {
+  height: 18px;
+  border-radius: 1px;
+  background-color: #e5c558;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.line {
+  width: 2px;
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-right: 15px;
+}
+
+.moreInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 226px;
+}
+
+.moreInfoText {
+  width: 100px;
+  height: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.moreInfoText {
+  cursor: pointer;
+}
+
+.smallCardBox {
+  display: flex;
+}
+
+/* CARD 2 */
+
+.cardbox2 {
+  margin-top: 34px;
+  margin-left: 16px;
+  margin-bottom: 114px;
+  max-width: 1148px;
+  max-height: 360px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.cardbox2 > :not(:last-child) {
+  margin-right: 28px;
+}
+
+.card2 {
+  position: relative;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+  z-index: 2;
+  width: 360px;
+  height: 248px;
+}
+
+.innerContainer2 {
+  border: 2px solid #e5af56;
+  border-radius: 16px;
+  background-color: #111229;
+  width: 360px;
+  height: 248px;
+}
+
+.backCover2 {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 360px;
+  height: 248px;
+  border-radius: 16px;
+  background-image: linear-gradient(
+    rgba(39, 108, 115, 1),
+    rgba(82, 147, 232, 1)
+  );
+  top: -3.5%;
+  right: -2.5%;
+  transition: all 0.2s;
+  backface-visibility: hidden;
+}
+
+.card2:hover .backCover2 {
+  top: -2%;
+  right: -1.5%;
+}
+
+/* user */
+
+.userInfoBox {
+  display: flex;
+  width: 180px;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 24px;
+  margin-top: 32px;
+}
+
+.userImage {
+  width: 48px;
+  height: 48px;
+}
+
+.userState {
+  display: flex;
+  width: 114px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.userDescription {
+  width: 318px;
+  margin: auto;
+  margin-top: 24px;
+  text-align: left;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .cardBox {
+    overflow-x: scroll;
+  }
+
+  .cardbox2 {
+    overflow-x: scroll;
+  }
+}

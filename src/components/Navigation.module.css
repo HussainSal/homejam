@@ -1,0 +1,103 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  max-width: 1140px;
+  margin-top: 14px;
+}
+
+.logo {
+  width: 86px;
+  height: 44px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.navCategory {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.basket {
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+::-webkit-input-placeholder {
+  color: #fff !important;
+}
+
+.textField {
+  color: #fff !important;
+}
+
+.input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 70px;
+  color: #fff;
+  padding-left: 26px;
+  position: relative;
+}
+
+.search {
+  position: absolute;
+}
+
+.navCategory2 {
+  display: none;
+  width: 200px;
+}
+
+@media (max-width: 600px) {
+  .inputContainer {
+    width: 125px;
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    position: relative;
+  }
+
+  .input2 {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 50px;
+    color: #fff;
+    margin-right: auto;
+  }
+
+  .search2 {
+    position: absolute;
+    right: 0%;
+    top: -5%;
+  }
+
+  .input:focus .search2 {
+    display: none;
+  }
+  .navCategory {
+    display: none;
+  }
+
+  .navCategory2 {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 15px;
+  }
+
+  .navCategory2:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+}
