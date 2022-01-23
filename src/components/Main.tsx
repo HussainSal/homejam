@@ -93,7 +93,10 @@ const Main = () => {
                           <div className={classes.smallCardBox}>
                             <div className={classes.line} />
 
-                            <div className={classes.ticketBox}>
+                            <div
+                              onClick={() => {}}
+                              className={classes.ticketBox}
+                            >
                               <img
                                 className={`${classes.ticket1} `}
                                 src={ticket}
